@@ -14,14 +14,14 @@
 static const uint8_t TX = 1;
 static const uint8_t RX = 3;
 
-static const uint8_t SDA = 5;
-static const uint8_t SCL = 4;
+static const uint8_t SDA = 22;
+static const uint8_t SCL = 23;
 
 static const uint8_t SS    = 15;
 static const uint8_t MOSI  = 13;
 static const uint8_t MISO  = 12;
 static const uint8_t SCK   = 14;
-
+ /*
 static const uint8_t A0 = 36;
 static const uint8_t A3 = 39;
 static const uint8_t A10 = 4;
@@ -56,6 +56,7 @@ static const uint8_t D7 = 13;
 static const uint8_t D8 = 15;
 static const uint8_t D9 = 3;
 static const uint8_t D10 = 1;
+*/
 
 // OLed
 //static const uint8_t OLED_SCL = SCL;

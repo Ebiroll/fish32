@@ -18,7 +18,7 @@
 #include <Wire.h>
 
 #include "MPU9250.h"
-//#include "utility/quaternionFilters.h"
+#include "quaternionFilters.h"
 
 #define processing_out false
 #define AHRS true         // Set to false for basic data read
@@ -53,6 +53,8 @@ void setup()
   M5.Lcd.fillScreen(BLACK);   // clears the screen and buffer
 #endif // LCD
 
+#define MPU9250_ADDRESS 0x71
+
   // Read the WHO_AM_I register, this is a good test of communication
   byte c = IMU.readByte(MPU9250_ADDRESS, WHO_AM_I_MPU9250);
   Serial.print("MPU9250 "); Serial.print("I AM "); Serial.print(c, HEX);
@@ -72,6 +74,7 @@ void setup()
     Serial.println("MPU9250 is online...");
 
     // Start by performing self test and reporting values
+    /*
     IMU.MPU9250SelfTest(IMU.SelfTest);
     Serial.print("x-axis self test: acceleration trim within : ");
     Serial.print(IMU.SelfTest[0],1); Serial.println("% of factory value");
@@ -85,7 +88,7 @@ void setup()
     Serial.print(IMU.SelfTest[4],1); Serial.println("% of factory value");
     Serial.print("z-axis self test: gyration trim within : ");
     Serial.print(IMU.SelfTest[5],1); Serial.println("% of factory value");
-
+    */
     // Calibrate gyro and accelerometers, load biases in bias registers
     IMU.calibrateMPU9250(IMU.gyroBias, IMU.accelBias);
 
@@ -162,9 +165,9 @@ void setup()
   //   while(1) ; // Loop forever if communication doesn't happen
   // }
 
-  M5.Lcd.setTextSize(1);
-  M5.Lcd.setTextColor(GREEN ,BLACK);
-  M5.Lcd.fillScreen(BLACK);
+  //M5.Lcd.setTextSize(1);
+  //M5.Lcd.setTextColor(GREEN ,BLACK);
+  //M5.Lcd.fillScreen(BLACK);
 }
 
 void loop()
