@@ -2,13 +2,16 @@
 
 https://www.analoglamb.com/product/esp32-community-education-board-analoglamb-fish32-seed-board/
 
-Examples are built with the Arduino ide or platform io.
+Examples are built with the Arduino ide,  platform io or esp-idf.
+
+https://docs.espressif.com/projects/esp-idf/en/latest/get-started/
 
 https://platformio.org/
 
 
 ## Building
 
+Setup esp-idf
 ```
 pio run
 ```
