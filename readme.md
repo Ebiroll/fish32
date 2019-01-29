@@ -46,7 +46,6 @@ http://www.si-en.com/product.asp?pid=1593
 
 
 ### Motion sensor
-
 MPU9250
 
 Name | type  | pin
@@ -106,7 +105,7 @@ P_SPI_MISO	| u8 |	12
 P_SPI_CLK	| u8 |	14
 
 ### Lora
-
+Over SPI,
 Name | type  | pin
 -----| ------ | ----- 
 P_LORA_CS	| u8 |	0
@@ -118,7 +117,10 @@ P_LORA_RESET	| u8 |	15
 
 ### Ethernet
 Connectoed on SPI
+
 PHY, HR911106A
+
+
 Should be similar to this,
 http://www.kosmodrom.com.ua/pdf/HR911105A.pdf
 W5500
