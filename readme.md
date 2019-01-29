@@ -29,11 +29,6 @@ P_I2C_SDA	| u8 |	22
 Is at address  0x3C/0x78
 or more seldom 0x3D/0x7A
 
-component, CMAKE file
-https://github.com/olikraus/u8g2/blob/master/CMakeLists.txt
-
-https://github.com/olikraus/u8g2/issues/192
-
 ### Proximity sensor
 APDS-9960
 https://cdn.sparkfun.com/assets/learn_tutorials/3/2/1/Avago-APDS-9960-datasheet.pdf
@@ -52,7 +47,7 @@ http://www.si-en.com/product.asp?pid=1593
 
 ### Motion sensor
 
-https://github.com/m5stack/M5Stack/blob/master/examples/Modules/MPU9250/MPU9250BasicAHRS/MPU9250BasicAHRS.ino
+MPU9250
 
 Name | type  | pin
 -----| ------ | ----- 
@@ -65,9 +60,9 @@ Name | type  | pin
 -----| ------ | -----
 P_SD_DAT2	| u8 |	09
 P_SD_DAT3	| u8 |	10
-P_SD_CMD	| u8 |	15?11
-P_SD_CLK	| u8 |	14?06
-P_SD_DAT0	| u8 |	02?07
+P_SD_CMD	| u8 |	11
+P_SD_CLK	| u8 |	06
+P_SD_DAT0	| u8 |	07
 P_SD_DAT1	| u8 |	08
 
 P_XDCS	| u8 |	2
