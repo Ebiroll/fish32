@@ -105,7 +105,8 @@ P_SPI_MISO	| u8 |	12
 P_SPI_CLK	| u8 |	14
 
 ### Lora
-Over SPI,
+Over SPI
+
 Name | type  | pin
 -----| ------ | ----- 
 P_LORA_CS	| u8 |	0
